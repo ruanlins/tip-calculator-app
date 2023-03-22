@@ -30,6 +30,9 @@ tipButtons.forEach(button => {
         if (!customInput.classList.contains("active")) {
             customInput.value = ""
         }
+        if (billInput.value != "" && billInput.value > 1 && peopleNumber.value > 0 && peopleNumber.value != "") {
+            calculateTip();
+        }
     })
 })
 
