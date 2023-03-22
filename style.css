@@ -77,6 +77,19 @@ body {
     gap: 10px;
 }
 
+.people-sec {
+    position: relative
+}
+
+#error {
+    font-size: .9rem;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    color: hsla(0, 100%, 51%, 0.822);
+    display: none;
+}
+
 .bill-input,
 .people-input {
     position: relative;
@@ -100,6 +113,11 @@ body {
     top: 50%;
     left: 5%;
     transform: translate(-50%, -50%)
+}
+
+.people-input.error input {
+    border: 2px solid hsla(0, 100%, 51%, 0.822);
+    outline: none;
 }
 
 .tip-buttons {

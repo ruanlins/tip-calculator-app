@@ -5,6 +5,8 @@ const peopleNumber = document.querySelector(".people-input input");
 const personTip = document.querySelector(".tip-person");
 const personTotal = document.querySelector(".total-person");
 const resetBtn = document.querySelector(".reset-btn");
+const error = document.querySelector("#error")
+const inputError = document.querySelector(".people-input")
 
 //reset button
 resetBtn.addEventListener('click', () => {
@@ -63,7 +65,14 @@ billInput.addEventListener("keyup", () => {
 })
 
 peopleNumber.addEventListener("keyup", () => {
+    if (peopleNumber.value == 0) {
+        error.style.display = "block"
+        inputError.classList.add("error")
+    }
+
     if (billInput.value != "" && billInput.value > 1 && peopleNumber.value > 0 && peopleNumber.value != "") {
+        inputError.classList.remove("error")
+        error.style.display = "none"
         calculateTip();
     }
 })
