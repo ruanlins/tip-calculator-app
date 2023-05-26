@@ -15,11 +15,11 @@ Users should be able to:
 <table>
         <tr>
 		    <td>
-                <img src="/images/mscreenshot.png"
+                <img src="./design/mscreenshot.png"
                     alt="Mobile solution" width="100%" title="Mobile solution"  />
             </td>
             <td>
-                <img src="./images/dscreenshot.png"
+                <img src="./design/dscreenshot.png"
                     alt="Desktop solution" width="100%" title="Desktop solution"/>
             </td>
         </tr>
